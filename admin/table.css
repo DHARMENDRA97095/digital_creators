@@ -1,0 +1,240 @@
+* {
+  margin: 10px;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+}
+
+/* ---------------Admin Page CSS------------------ */
+/* .admin-main {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+.admin-main input[type="text"],
+.admin-main input[type="file"] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  background: #f9f9f9;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-main label {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.admin-main button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #74ebd5;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+} */
+
+.dashboard-admin {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+.main-box {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+.main-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.main-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+}
+.main-box h1 {
+  font-size: 20px;
+  color: #333;
+}
+
+.main-box a {
+  text-decoration: none;
+  color: inherit;
+}
+.room-dashboard::before {
+  background: linear-gradient(90deg, #28a745, #7dd56f);
+}
+
+.property-dashboard::before {
+  background: linear-gradient(90deg, #ff9800, #ffc107);
+}
+
+.main-dashboard::before {
+  background: linear-gradient(90deg, #6f42c1, #b58cff);
+}
+@media (max-width: 600px) {
+  .main-box h1 {
+    font-size: 18px;
+  }
+}
+
+
+
+/* --------------------Table CSS----------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* --------------Practice2/css/admin.css-------------- */
+
+.first-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  width: 100%;
+}
+
+.first-container h2 {
+  margin-bottom: 20px;
+  color: #cd2020;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.practice-container {
+  display: flex;
+  border: 2px solid #cd2020;
+  margin: 5px;
+  width: 100%;
+}
+
+.first-container {
+  /* border: 2px solid #20cd98; */
+  margin: 5px;
+  width: 50%;
+}
+
+.second-container {
+  /* border: 2px solid #2060cd; */
+  margin: 5px;
+  width: 50%;
+}
+
+.second-container img {
+  width: 100%;
+  height: 70vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.btn-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* -----------------------------------------------Dashboard------------------------------------ */
+
+.admin-header {
+  text-align: center;
+}
+
+.dashboard-admin {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.main-box {
+  width: 50%;
+  height: 30vh;
+  background-color: #f07d7d;
+  border: none;
+  margin: 20px 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-box:hover{
+  color: #444;
+  background-color: #3ef4d2;
+  border-radius: 30px;
+}
+.room-dashboard a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+}
+.property-dashboard a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+}
+.main-dashboard a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+/* -----------------Star Rating --------------- */
+
+
