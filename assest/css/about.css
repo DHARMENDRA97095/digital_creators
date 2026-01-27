@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  background: #dedcdc;
+}
+/* About Section */
+.about-section {
+  background: linear-gradient(to bottom, #f8fbff, #fffaf5);
+  padding: 60px 20px;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+.about-title span {
+  background: linear-gradient(90deg, #f97316, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  color: #475569;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
+
+/* --------------- Service Show ---------------- */
+
+.software-section {
+  background: #ffffff;
+}
+
+/* Title */
+.software-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Text */
+.software-text {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* List */
+.software-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+.software-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.software-list li::before {
+  content: "\F26E"; /* Bootstrap check icon */
+  font-family: "bootstrap-icons";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #f97316;
+  font-size: 18px;
+}
+
+/* Image */
+.software-image {
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  max-height: 420px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .software-title {
+    font-size: 2rem;
+  }
+
+  .software-image {
+    max-height: 320px;
+    margin-top: 20px;
+  }
+}

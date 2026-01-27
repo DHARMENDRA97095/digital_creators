@@ -1,3 +1,12 @@
+<?php
+// Optional: session protection
+// session_start();
+// if (!isset($_SESSION['email'])) {
+//     header("Location: index.php");
+//     exit();
+// }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,12 +67,12 @@
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        /* Hide all sections initially */
+        /* Hide all sections */
         .dashboard-section {
             display: none;
         }
 
-        /* Show active */
+        /* Show active section */
         .dashboard-section.active {
             display: block;
         }
@@ -77,8 +86,9 @@
         <h2>ADMIN PANEL</h2>
 
         <a href="#" class="menu-link active" onclick="showSection(event, 'home')">🏠 Dashboard</a>
-        <a href="admin_page.php" class="menu-link" onclick="showSection(event, 'logo')">🎨 Logo & Content</a>
-        <a href="#" class="menu-link" onclick="showSection(event, 'blog')">📝 Blog Dashboard</a>
+        <a href="#" class="menu-link" onclick="showSection(event, 'logo')">🎨 Logo & Content</a>
+        <a href="#" class="menu-link" onclick="showSection(event, 'service')">📝 Home Services</a>
+        <a href="#" class="menu-link" onclick="showSection(event, 'about')">📝 Who We Are</a>
         <a href="#" class="menu-link" onclick="showSection(event, 'users')">👥 Users</a>
         <a href="#" class="menu-link" onclick="showSection(event, 'settings')">⚙️ Settings</a>
     </div>
@@ -92,25 +102,37 @@
             <p class="text-muted">Manage your website content & dashboard sections</p>
         </div>
 
-        <!-- ✅ Sections -->
+        <!-- Sections -->
+
+        <!-- Home -->
         <div id="home" class="dashboard-section active section-box">
             <h3>🏠 Welcome Dashboard</h3>
             <p>This is the Home Dashboard section.</p>
         </div>
 
+        <!-- Logo -->
         <div id="logo" class="dashboard-section section-box">
-            <?php include "admin_page.php" ?>
+            <?php include "admin_page.php"; ?>
         </div>
 
-        <div id="blog" class="dashboard-section section-box">
-            <?php include "home_services.php" ?>
+        <!-- Home Services -->
+        <div id="service" class="dashboard-section section-box">
+            <?php #include "home_services.php"; ?>
+            <?php include "who_we.php"; ?>
         </div>
 
+        <!-- About -->
+        <div id="about" class="dashboard-section section-box">
+            <?php # include "who_we.php"; ?>
+        </div>
+
+        <!-- Users -->
         <div id="users" class="dashboard-section section-box">
             <h3>👥 Users Dashboard</h3>
             <p>Manage user roles, status, admin/user permissions.</p>
         </div>
 
+        <!-- Settings -->
         <div id="settings" class="dashboard-section section-box">
             <h3>⚙️ Settings Dashboard</h3>
             <p>Site settings, profile, logout, etc.</p>
@@ -124,18 +146,20 @@
             event.preventDefault();
 
             // Hide all sections
-            const sections = document.querySelectorAll(".dashboard-section");
-            sections.forEach(section => section.classList.remove("active"));
+            document.querySelectorAll(".dashboard-section").forEach(section => {
+                section.classList.remove("active");
+            });
 
             // Show selected section
             document.getElementById(sectionId).classList.add("active");
 
-            // Remove active class from all links
-            const links = document.querySelectorAll(".menu-link");
-            links.forEach(link => link.classList.remove("active"));
+            // Remove active from all links
+            document.querySelectorAll(".menu-link").forEach(link => {
+                link.classList.remove("active");
+            });
 
-            // Add active class to clicked link
-            event.target.classList.add("active");
+            // Add active to clicked link
+            event.currentTarget.classList.add("active");
         }
     </script>
 

@@ -23,7 +23,7 @@
             $select = mysqli_query($conn, "SELECT * FROM `logoimage`");
             while ($row = mysqli_fetch_assoc($select)) {
             ?>
-                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.php">
                     <img src="admin/<?= $row['image']; ?>" alt="Logo" class="navbar-logo" />
                 </a>
             <?php } ?>
@@ -44,13 +44,13 @@
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3 mt-3 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active nav-custom" href="#">Home</a>
+                        <a class="nav-link active nav-custom" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-custom" href="#">About Us</a>
+                        <a class="nav-link nav-custom" href="about.php">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-custom" href="#">Services</a>
+                        <a class="nav-link nav-custom" href="service.php">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-custom" href="#">Portfolio</a>

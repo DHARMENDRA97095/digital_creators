@@ -16,29 +16,32 @@ if (!isset($_SESSION['email'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Service</title>
+    <title>Who We</title>
     <link rel="stylesheet" href="table.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
     <section>
-        <h1>Home Services Property Add</h1>
+        <h1>Who We Property Add</h1>
         <form action="insert.php" method="POST" enctype="multipart/form-data">
 
-        <label for="name">Service Name :</label>
+            <label for="name">Who We :</label>
             <input type="text" name="title"><br><br>
 
-            <label for="para">Content:</label>
-            <textarea name="para"></textarea><br><br>
+            <label for="para">Content1:</label>
+            <input type="text" name="para1" id=""> <br><br>
+
+            <label for="para">Content2:</label>
+            <input type="text" name="para2" id=""><br><br>
+
+            <label for="para">Content3:</label>
+            <input type="text" name="para3" id=""><br><br>
 
             <label for="image">Image :</label>
             <input type="file" name="image"><br><br>
 
-            <label for="">Link :</label>
-                <input type="text" name="link" placeholder="Enter link"> <br><br>
-
-            <button type="submit" name="home_service" class="btn btn-success">
+            <button type="submit" name="who_we" class="btn btn-success">
                 Add Property
             </button>
 
@@ -54,10 +57,11 @@ if (!isset($_SESSION['email'])) {
             <tr>
 
                 <th scope="col">Id</th>
-                <th scope="col">Service Name</th>
-                <th scope="col">Para</th>
+                <th scope="col">Who we</th>
+                <th scope="col">Para1</th>
+                <th scope="col">Para2</th>
+                <th scope="col">Para3</th>
                 <th scope="col">Image</th>
-                <th scope="col">Link</th>
 
                 <th scope="col">Delete</th>
                 <th scope="col">Update</th>
@@ -68,19 +72,19 @@ if (!isset($_SESSION['email'])) {
 
         include 'config.php';
 
-        $pic = mysqli_query($conn, "SELECT * FROM `home_services`");
+        $pic = mysqli_query($conn, "SELECT * FROM `who_we`");
 
         while ($row = mysqli_fetch_assoc($pic)) {
             echo "
                 <tr>
                     <td>{$row['id']}</td>
                     <td>{$row['title']}</td>
-                    <td>{$row['para']}</td>
+                    <td>{$row['para1']}</td>
+                    <td>{$row['para2']}</td>
+                    <td>{$row['para3']}</td>
                     <td><img src='{$row['image']}' height='100' width='100'></td>
-                    <td>{$row['link']}</td>
-
                     
-                    <td><a href='home_services_delete.php?id={$row['id']}' class='btn btn-danger'>Delete</a></td>
+                    <td><a href='who_we_delete.php?id={$row['id']}' class='btn btn-danger'>Delete</a></td>
                     <td><a href='update.php?id={$row['id']}' class='btn btn-primary'>Update</a></td>
 
                 </tr>

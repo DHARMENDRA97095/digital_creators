@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Creators | Home </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assest/css/style.css">
 </head>
 
 <body>
@@ -49,8 +51,36 @@
     </section>
 
     <!-- -----------------Services -------------- -->
-     <?php include "assest/component/services.php" ?>
-     
+    <?php include "assest/component/services.php" ?>
+
+    <!-- -----------------Why Choose  -------------- -->
+    <?php include "assest/component/why_choose.php" ?>
+
+    <!-- ----------------- Our DIrector  -------------- -->
+    <?php include "assest/component/director.php" ?>
+
+    <!-- ----------------- Testimonal  -------------- -->
+    <?php include "assest/component/testimonal.php" ?>
+
+    <!-- -------------- Get Started -------------- -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="cta-title">Ready to Grow Your Business?</h2>
+            <p class="cta-text">
+                Let's discuss how we can help you achieve your digital goals
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-light cta-btn-primary">
+                    Get Started Today
+                </a>
+                <a href="#" class="btn btn-outline-light cta-btn-secondary">
+                    View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- ----------- Footer ------------------ -->
     <?php include "assest/component/footer.php" ?>
 </body>
