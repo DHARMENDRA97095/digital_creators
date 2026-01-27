@@ -11,6 +11,7 @@ if (isset($_POST['upload'])) {
     $img_des  = "uploadimage/" . $img_name;
 
     move_uploaded_file($img_loc, $img_des);
+    print_r("image location");
 
     mysqli_query(
         $conn,
@@ -24,25 +25,25 @@ if (isset($_POST['upload'])) {
 }
 
 // Blog Insertion Code
-// if (isset($_POST['insert'])) {
+if (isset($_POST['home_service'])) {
 
-//     $TITLE = $_POST['para'];   // mapped to title
-//     $PARA  = $_POST['description'];
-//     $DATE  = $_POST['blog_date'];
+    $TITLE  = $_POST['title'];
+    $PARA = $_POST['para'];   // mapped to title
+    $LINK  = $_POST['link'];
 
-//     $img_loc  = $_FILES['image']['tmp_name'];
-//     $img_name = $_FILES['image']['name'];
-//     $img_des  = "uploadimage/" . $img_name;
+    $img_loc  = $_FILES['image']['tmp_name'];
+    $img_name = $_FILES['image']['name'];
+    $img_des  = "uploadimage/" . $img_name;
 
-//     move_uploaded_file($img_loc, $img_des);
+    move_uploaded_file($img_loc, $img_des);
 
-//     mysqli_query(
-//         $conn,
-//         "INSERT INTO blog_main
-//         (para, blog_date, description, image)
-//         VALUES
-//         ('$TITLE','$DATE', '$PARA', '$img_des')"
-//     );
+    mysqli_query(
+        $conn,
+        "INSERT INTO home_services
+        (title ,para, link, image)
+        VALUES
+        ('$TITLE','$PARA','$LINK','$img_des')"
+    );
 
-//     header('location:admin-property.php');
-// }
+    header('location:home_services.php');
+}

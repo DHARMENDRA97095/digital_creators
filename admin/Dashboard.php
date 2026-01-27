@@ -103,8 +103,7 @@
         </div>
 
         <div id="blog" class="dashboard-section section-box">
-            <h3>📝 Blog Dashboard</h3>
-            <p>Here you can manage blogs, posts, categories.</p>
+            <?php include "home_services.php" ?>
         </div>
 
         <div id="users" class="dashboard-section section-box">

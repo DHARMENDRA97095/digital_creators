@@ -44,12 +44,12 @@ body {
   width: auto;
   object-fit: contain;
 } */
-.navbar-brand{
+.navbar-brand {
   height: 100px;
   width: 100px;
   object-fit: contain;
 }
-.navbar-brand img{
+.navbar-brand img {
   height: 100%;
   width: 100%;
 }
@@ -316,5 +316,87 @@ body {
   .hero-btn-outline {
     width: 100%;
     text-align: center;
+  }
+}
+
+/* --------------------- Services ------------------- */
+
+.services-section {
+  background: #fff;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ---icon  */
+/* .icon-box {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff7a18, #4f7cff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+} */
+
+.icon-box i {
+  font-size: 24px;
+  color: #ffffff;
+}
+/* ---Image  */
+.icon-box {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff7a18, #4f7cff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-box img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+
+.service-card h5 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.btn-outline-warning {
+  border-width: 2px;
+  font-weight: 500;
+}
+@media (max-width: 576px) {
+  .icon-box {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon-box img {
+    width: 24px;
+    height: 24px;
   }
 }

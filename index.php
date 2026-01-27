@@ -47,6 +47,10 @@
             </div>
         </div>
     </section>
+
+    <!-- -----------------Services -------------- -->
+     <?php include "assest/component/services.php" ?>
+     
     <!-- ----------- Footer ------------------ -->
     <?php include "assest/component/footer.php" ?>
 </body>
