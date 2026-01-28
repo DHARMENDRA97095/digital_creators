@@ -72,3 +72,34 @@ else if (isset($_POST['who_we'])) {
 
     header('location:who_we.php');
 }
+
+// Portfolio Insertion Code
+else if (isset($_POST['portfolio'])) {
+
+    $DATA_CATEGORY  = $_POST['data_category'];
+    $BADGE = $_POST['badge'];
+    $TITLE = $_POST['title'];
+    $PARA = $_POST['para'];
+    $TAG1 = $_POST['tag1'];
+    $TAG2 = $_POST['tag2'];
+    $TAG3 = $_POST['tag3'];
+    $TAG4 = $_POST['tag4'];
+    $TAG5 = $_POST['tag5'];
+    $LINK = $_POST['link'];
+
+    $img_loc  = $_FILES['image']['tmp_name'];
+    $img_name = $_FILES['image']['name'];
+    $img_des  = "uploadimage/" . $img_name;
+
+    move_uploaded_file($img_loc, $img_des);
+
+    mysqli_query(
+        $conn,
+        "INSERT INTO portfolio
+        (data_category,badge,title,para,tag1,tag2,tag3,tag4,tag5,link, image)
+        VALUES
+        ('$DATA_CATEGORY','$BADGE','$TITLE','$PARA','$TAG1','$TAG2','$TAG3','$TAG4','$TAG5','$LINK','$img_des')"
+    );
+
+    header('location:portfolio.php');
+}

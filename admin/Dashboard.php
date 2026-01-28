@@ -14,8 +14,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <style>
@@ -118,12 +116,13 @@
         <!-- Home Services -->
         <div id="service" class="dashboard-section section-box">
             <?php #include "home_services.php"; ?>
-            <?php include "who_we.php"; ?>
+            <?php #include "who_we.php"; ?>
+            <?php include "portfolio.php"; ?>
         </div>
 
         <!-- About -->
         <div id="about" class="dashboard-section section-box">
-            <?php # include "who_we.php"; ?>
+            <?php #include "who_we.php"; ?>
         </div>
 
         <!-- Users -->
@@ -143,6 +142,7 @@
     <!-- JavaScript -->
     <script>
         function showSection(event, sectionId) {
+            // alert("hi" +sectionId);
             event.preventDefault();
 
             // Hide all sections
@@ -151,6 +151,7 @@
             });
 
             // Show selected section
+            // alert(document.getElementById(sectionId));
             document.getElementById(sectionId).classList.add("active");
 
             // Remove active from all links

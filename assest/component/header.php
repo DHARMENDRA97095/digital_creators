@@ -53,7 +53,7 @@
                         <a class="nav-link nav-custom" href="service.php">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-custom" href="#">Portfolio</a>
+                        <a class="nav-link nav-custom" href="portfolio.php">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-custom" href="#">Team</a>
