@@ -11,14 +11,14 @@
 
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-2">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-3">
         <div class="container">
             <!-- Logo -->
-            <!-- <a class="navbar-brand fw-bold logo-text" href="../index.php">
+            <a class="navbar-brand fw-bold logo-text" href="../index.php">
                 <span class="logo-orange">Digital</span>
                 <span class="logo-purple">Creators</span>
-            </a> -->
-            <?php
+            </a>
+            <!-- <?php
              include './admin/config.php';
             $select = mysqli_query($conn, "SELECT * FROM `logoimage`");
             while ($row = mysqli_fetch_assoc($select)) {
@@ -26,7 +26,7 @@
                 <a class="navbar-brand d-flex align-items-center gap-2" href="index.php">
                     <img src="admin/<?= $row['image']; ?>" alt="Logo" class="navbar-logo" />
                 </a>
-            <?php } ?>
+            <?php } ?> -->
 
             <!-- Mobile Toggle Button -->
             <button
@@ -56,15 +56,18 @@
                         <a class="nav-link nav-custom" href="portfolio.php">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-custom" href="#">Team</a>
+                        <a class="nav-link nav-custom" href="team.php">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-custom" href="#">Contact</a>
+                        <a class="nav-link nav-custom" href="blog.php">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-custom" href="contact.php">Contact</a>
                     </li>
 
                     <!-- Button -->
                     <li class="nav-item mt-3 mt-lg-0">
-                        <a href="#" class="btn quote-btn px-4 py-2">
+                        <a href="./contact.php" class="btn quote-btn px-4 py-2">
                             Get Quote
                         </a>
                     </li>

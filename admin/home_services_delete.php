@@ -4,6 +4,6 @@ $id = $_GET['id'];
 // -------------------------main Room----------------
 mysqli_query($conn, "DELETE FROM `home_services` WHERE id = $id");
 
-header('location:home_services.php'); 
+header('location:../admin/Dashboard.php'); 
 
 ?>

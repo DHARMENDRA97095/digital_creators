@@ -62,67 +62,13 @@
                     </div>
                 </div> -->
 
-                <!-- Card 3 -->
-                <!-- <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
-                        <div class="icon-box">
-                            <i class="bi bi-laptop"></i>
-                        </div>
-                        <h5>Web Application Development</h5>
-                        <p>
-                            Powerful web applications built with cutting-edge technologies.
-                            From simple tools to complex enterprise solutions.
-                        </p>
-                    </div>
-                </div> -->
-
-                <!-- Card 4 -->
-                <!-- <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
-                        <div class="icon-box">
-                            <i class="bi bi-search"></i>
-                        </div>
-                        <h5>SEO Services</h5>
-                        <p>
-                            Improve your search engine rankings and drive organic traffic
-                            to your website with our proven SEO strategies.
-                        </p>
-                    </div>
-                </div> -->
-
-                <!-- Card 5 -->
-                <!-- <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
-                        <div class="icon-box">
-                            <i class="bi bi-megaphone"></i>
-                        </div>
-                        <h5>Digital Marketing</h5>
-                        <p>
-                            Comprehensive digital marketing services to grow your online
-                            presence and reach your target audience effectively.
-                        </p>
-                    </div>
-                </div> -->
-
-                <!-- Card 6 -->
-                <!-- <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
-                        <div class="icon-box">
-                            <i class="bi bi-facebook"></i>
-                        </div>
-                        <h5>Social Media Marketing</h5>
-                        <p>
-                            Engage with your audience on social media platforms.
-                            We create compelling content and manage your social presence.
-                        </p>
-                    </div>
-                </div> -->
+                
 
             </div>
 
             <!-- Button -->
             <div class="text-center mt-5">
-                <a href="#" class="btn btn-outline-warning btn-lg px-5">
+                <a href="./service.php" class="btn btn-outline-warning btn-lg px-5">
                     View All Services
                 </a>
             </div>

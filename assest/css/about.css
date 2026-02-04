@@ -45,6 +45,90 @@ body {
   }
 }
 
+/* ----------------- COntact Us ---------------------------- */
+.contact-section {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.contact-title {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.form-control {
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ff6a00;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #ff6a00, #3b82f6);
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+}
+
+.info-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.info-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff6a00, #3b82f6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.info-box h6 {
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.info-box p {
+  margin-bottom: 0;
+  font-size: 14.5px;
+  color: #555;
+}
+
+.business-hours {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 25px;
+}
+
+.business-hours h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .contact-section {
+    padding: 40px 0;
+  }
+}
+
 /* --------------- Service Show ---------------- */
 
 .software-section {
@@ -201,4 +285,529 @@ body {
   font-weight: 500;
   color: #ff6a00;
   text-decoration: none;
+}
+
+/* --------------------------------------- Blog Section ------------------------------------ */
+/* Banner container */
+.blog-banner {
+  width: 100%;
+  height: min(90vh, 700px);
+}
+
+/* Banner image */
+.blog-banner-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/banner/why-choose-digi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-banner-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(32, 31, 31, 0.6); /* 🔥 opacity control */
+}
+
+.blog-banner-image * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Center text */
+.blog-banner-header {
+  text-align: center;
+  color: #fff;
+  padding: 0 16px;
+}
+
+/* Responsive heading */
+.blog-banner-header h1 {
+  font-size: clamp(36px, 8vw, 100px);
+  font-weight: 800;
+}
+
+/* Blog content section */
+.blog-part-content {
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* -------- Blog Main COntainer-------- */
+.blog-main-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+.blog-main-container1 {
+  width: 65%;
+  background-color: #fff;
+}
+.blog-1-image {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.blog-1-image img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ---------Blog Part Post 2------- */
+.blog-main-container2 {
+  width: 25%;
+  background-color: rgb(234, 232, 232);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .blog-main-container {
+    flex-direction: column; /* 🟡 Single column */
+    align-items: stretch;
+  }
+
+  .blog-main-container1,
+  .blog-main-container2 {
+    width: 100%;
+  }
+  .blog-main-container2 {
+    margin-top: 0;
+  }
+}
+
+/* --------------------------------------- Single Blog Section ------------------------------------ */
+.blog-section {
+  background: #ffffff;
+}
+
+.section-subtitle {
+  color: #0a6c4f;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle .dot {
+  width: 10px;
+  height: 10px;
+  background: #0a6c4f;
+  border-radius: 50%;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
+}
+
+.all-post-btn {
+  padding: 12px 22px;
+  font-weight: 600;
+  border-radius: 0;
+}
+
+.blog-card {
+  border: 1px solid #eee;
+  background: #fff;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 22px;
+}
+
+.blog-content h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.blog-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.read-more {
+  color: #0a6c4f;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.read-more i {
+  margin-left: 5px;
+}
+
+.blog-footer {
+  padding: 14px 22px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+/* --------------------------------------------------------------------- */
+.single-blog-banner {
+  width: 100%;
+  height: min(60vh, 700px);
+}
+
+.single-blog-banner-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/banner/why-choose-digi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-blog-banner-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(32, 31, 31, 0.6); /* 🔥 opacity control */
+}
+
+.single-blog-banner-image * {
+  position: relative;
+  z-index: 1;
+}
+
+.single-blog-main-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 60px 15px;
+}
+
+.sidebar-box {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.post-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.post-item img {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.post-item h6 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.post-item span {
+  font-size: 13px;
+  color: #0d6efd;
+}
+
+.post-item i {
+  margin-right: 5px;
+}
+
+.cta-box {
+  background: url("../image/banner/Digital-Banner.jpg") center/cover no-repeat;
+  padding: 40px 25px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.cta-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.cta-box * {
+  position: relative;
+}
+
+.cta-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cta-box p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* ===== Social Icons ===== */
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  width: 42px;
+  height: 42px;
+  background: #0a6c4f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+/* .social-icons a:hover {
+  background: #094e3a;
+  color: #fff;
+} */
+.social-icons .facebook {
+  background: #2563eb;
+}
+.social-icons .facebook:hover {
+  background: rgb(17, 83, 105);
+  color: #fff;
+}
+.social-icons .instagram {
+  background: pink;
+}
+.social-icons .youtube {
+  background: rgb(242, 89, 89);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 576px) {
+  .post-item {
+    flex-direction: column;
+  }
+
+  .post-item img {
+    width: 100%;
+    height: 160px;
+  }
+}
+
+/* ------------------- Services Container ----------- */
+.service-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ff7a18, #3b82f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-box img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.service-card h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #2c2b2b;
+}
+
+.service-card ul {
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.service-card ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding-left: 28px;
+  position: relative;
+  color: #333;
+}
+
+.service-card ul li::before {
+  content: "✓";
+  color: #22c55e;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* ---------------- Team section ---------------- */
+
+.profile-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px 25px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.profile-card h4 {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.profile-role {
+  color: #ff6a00;
+  font-weight: 600;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.profile-desc {
+  color: #555;
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.profile-info {
+  border-top: 1px solid #eee;
+  padding-top: 14px;
+  margin-top: 14px;
+}
+
+.profile-info p {
+  margin-bottom: 6px;
+  font-size: 14.5px;
+}
+
+.profile-info span {
+  color: #ff6a00;
+  font-weight: 600;
+}
+
+.mail-icon {
+  width: 46px;
+  height: 46px;
+  background: #f1f3f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 22px auto 0;
+  font-size: 18px;
+  color: #495057;
+}
+
+/* Mobile tweak */
+@media (max-width: 576px) {
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
 }

@@ -38,7 +38,7 @@
             significant increase in customer engagement."
           </p>
           <div class="client d-flex align-items-center">
-            <img src="assest/image/director/Nikita_Maam.png" alt="">
+            <img src="assest/image/director/1.jpg" alt="">
             <div>
               <h6>Rajesh Kumar</h6>
               <small>CEO, Tech Solutions Pvt Ltd</small>
@@ -61,7 +61,7 @@
             Highly recommended!"
           </p>
           <div class="client d-flex align-items-center">
-            <img src="assest/image/director/Nikita_Maam.png" alt="">
+            <img src="assest/image/director/2.jpg" alt="">
             <div>
               <h6>Priya Sharma</h6>
               <small>Founder, E-commerce Hub</small>
@@ -84,7 +84,7 @@
             Professional and reliable."
           </p>
           <div class="client d-flex align-items-center">
-            <img src="assest/image/director/Nikita_Maam.png" alt="">
+            <img src="assest/image/director/3.jpg" alt="">
             <div>
               <h6>Amit Patel</h6>
               <small>CTO, Startup Innovations</small>
@@ -107,7 +107,7 @@
             Great team to work with!"
           </p>
           <div class="client d-flex align-items-center">
-            <img src="assest/image/director/Nikita_Maam.png" alt="">
+            <img src="assest/image/director/4.jpg" alt="">
             <div>
               <h6>Sneha Reddy</h6>
               <small>Marketing Director, Digital Marketing Pro</small>

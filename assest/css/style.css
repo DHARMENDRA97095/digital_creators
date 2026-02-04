@@ -38,12 +38,12 @@ body {
 .navbar .nav-link.active {
   color: #ff5a00 !important;
 }
-/* .navbar-logo {
+.navbar-logo {
   height: 40px;
   width: auto;
   object-fit: contain;
-} */
-.navbar-brand {
+}
+/* .navbar-brand {
   height: 100px;
   width: 100px;
   object-fit: contain;
@@ -51,7 +51,7 @@ body {
 .navbar-brand img {
   height: 100%;
   width: 100%;
-}
+} */
 
 /* Gradient Button */
 .quote-btn {

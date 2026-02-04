@@ -22,10 +22,10 @@
                 ?>
                     <!-- About -->
                     <div class="col-lg-3 col-md-6 col-12">
-                        <!-- <h3 class="footer-title">Digital Creatorss</h3> -->
-                        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                        <h3 class="footer-title">Digital Creators</h3>
+                        <!-- <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                             <img src="admin/<?= $row['image']; ?>" alt="Logo" class="navbar-logo" />
-                        </a>
+                        </a> -->
                         <p class="footer-text mt-3">
                             <?= $row['para']; ?>
                             <!-- Digital Creatorss is an India-based software development and digital marketing company providing custom software,

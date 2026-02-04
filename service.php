@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About Digital Creatorss</title>
+    <title>Servics Digital Creators</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -27,6 +27,64 @@
             </p>
         </div>
     </section>
+
+    <!-- --------------- Services Container ---------------- -->
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <?php
+                include 'admin/config.php';
+                $select = mysqli_query($conn, "SELECT * FROM `home_services`");
+                while ($row = mysqli_fetch_assoc($select)) {
+                ?>
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="icon-box">
+                                <img src="admin/<?= $row['image']; ?>" alt="Logo" class="navbar-logo" />
+                            </div>
+                            <h4><?= $row['title']; ?></h4>
+                            <p><?= $row['para'] ?></p>
+                            <ul>
+                                <li>Custom Application Development</li>
+                                <li>API Integration</li>
+                                <li>Database Design</li>
+                                <li>Cloud Solutions</li>
+                                <li>Maintenance & Support</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                <?php } ?>
+
+                <!-- Card 2 -->
+                <!-- <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="icon-box">
+                            <img src="assets/images/website.png" alt="Website Development">
+                        </div>
+                        <h4>Website Design & Development</h4>
+                        <p>
+                            Modern, responsive websites that look great on all devices.
+                            We create websites that convert visitors into customers.
+                        </p>
+                        <ul>
+                            <li>Responsive Design</li>
+                            <li>CMS Integration</li>
+                            <li>E-commerce Solutions</li>
+                            <li>Performance Optimization</li>
+                            <li>SEO-Friendly Structure</li>
+                        </ul>
+                    </div>
+                </div> -->
+
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- ----------- Services Show ---------------  -->
     <section class="software-section py-5">

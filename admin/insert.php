@@ -21,7 +21,7 @@ if (isset($_POST['upload'])) {
         ('$PARA', '$img_des')"
     );
 
-    header('location:admin_page.php');
+    header('location:../admin/Dashboard.php');
 }
 
 // Blog Insertion Code
@@ -45,7 +45,7 @@ else if (isset($_POST['home_service'])) {
         ('$TITLE','$PARA','$LINK','$img_des')"
     );
 
-    header('location:home_services.php');
+    header('location:../admin/Dashboard.php');
 }
 
 // Blog Insertion Code
@@ -70,7 +70,7 @@ else if (isset($_POST['who_we'])) {
         ('$TITLE','$PARA1','$PARA2','$PARA3','$img_des')"
     );
 
-    header('location:who_we.php');
+    header('location:../admin/Dashboard.php');
 }
 
 // Portfolio Insertion Code
@@ -101,5 +101,58 @@ else if (isset($_POST['portfolio'])) {
         ('$DATA_CATEGORY','$BADGE','$TITLE','$PARA','$TAG1','$TAG2','$TAG3','$TAG4','$TAG5','$LINK','$img_des')"
     );
 
-    header('location:portfolio.php');
+    header('location:../admin/Dashboard.php');
+}
+
+// Main_Blogs Insertion Code
+else if (isset($_POST['main_blogs'])) {
+
+    $TITLE = $_POST['title'];
+    $PARA1 = $_POST['para1'];
+    $PARA2 = $_POST['para2'];
+    $PARA3 = $_POST['para3'];
+    $DATE = $_POST['blog_date'];
+    $LINK = $_POST['link'];
+
+    $img_loc  = $_FILES['image']['tmp_name'];
+    $img_name = $_FILES['image']['name'];
+    $img_des  = "uploadimage/" . $img_name;
+
+    move_uploaded_file($img_loc, $img_des);
+
+    mysqli_query(
+        $conn,
+        "INSERT INTO main_blogs
+        (title,para1,para2,para3,blog_date,link, image)
+        VALUES
+        ('$TITLE','$PARA1','$PARA2','$PARA3','$DATE','$LINK','$img_des')"
+    );
+
+    header('location:../admin/Dashboard.php');
+}
+
+// Team Insertion Code
+else if (isset($_POST['upload_team'])) {
+
+    $NAME  = $_POST['name'];
+    $POSITION = $_POST['position'];
+    $DESC = $_POST['description'];
+    $MOBILE = $_POST['mobile'];
+    $EMAIL = $_POST['email'];
+
+    $img_loc  = $_FILES['image']['tmp_name'];
+    $img_name = $_FILES['image']['name'];
+    $img_des  = "uploadimage/" . $img_name;
+
+    move_uploaded_file($img_loc, $img_des);
+
+    mysqli_query(
+        $conn,
+        "INSERT INTO team
+        (name,position,description,mobile,email, image)
+        VALUES
+        ('$NAME','$POSITION','$DESC','$MOBILE','$EMAIL','$img_des')"
+    );
+
+    header('location:../admin/Dashboard.php');
 }
