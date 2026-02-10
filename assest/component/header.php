@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-3">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand fw-bold logo-text" href="../index.php">
+            <a class="navbar-brand fw-bold logo-text" href="index.php">
                 <span class="logo-orange">Digital</span>
                 <span class="logo-purple">Creators</span>
             </a>

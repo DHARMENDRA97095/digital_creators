@@ -46,10 +46,10 @@
                             <h4><?= $row['name']; ?></h4>
                             <div class="profile-role"><?= $row['position']; ?></div>
                             <p class="profile-desc"><?= $row['description']; ?></p>
-                            <div class="profile-info">
+                            <!-- <div class="profile-info">
                                 <p><strong>Phone:</strong> <span>+91 <?= $row['mobile'] ?></span></p>
                                 <p><strong>Email:</strong> <span><?= $row['email'] ?></span></p>
-                            </div>
+                            </div> -->
                             <!-- <div class="mail-icon">
                             <i class="fa-solid fa-envelope"></i>
                         </div> -->

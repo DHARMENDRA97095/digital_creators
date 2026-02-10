@@ -41,20 +41,22 @@
                 ?>
                     <!-- Card 1 -->
                     <div class="col-lg-4 col-md-6">
-                        <div class="service-card">
-                            <div class="icon-box">
-                                <img src="admin/<?= $row['image']; ?>" alt="Logo" class="navbar-logo" />
+                        <a href="services_all.php?page=<?= $row['link'] ?>" style="text-decoration: none;">
+                            <div class="service-card">
+                                <div class="icon-box">
+                                    <img src="admin/<?= $row['image']; ?>" alt="Logo" class="navbar-logo" />
+                                </div>
+                                <h4><?= $row['title']; ?></h4>
+                                <p><?= $row['para'] ?></p>
+                                <ul>
+                                    <li>Custom Application Development</li>
+                                    <li>API Integration</li>
+                                    <li>Database Design</li>
+                                    <li>Cloud Solutions</li>
+                                    <li>Maintenance & Support</li>
+                                </ul>
                             </div>
-                            <h4><?= $row['title']; ?></h4>
-                            <p><?= $row['para'] ?></p>
-                            <ul>
-                                <li>Custom Application Development</li>
-                                <li>API Integration</li>
-                                <li>Database Design</li>
-                                <li>Cloud Solutions</li>
-                                <li>Maintenance & Support</li>
-                            </ul>
-                        </div>
+                        </a>
                     </div>
 
                 <?php } ?>

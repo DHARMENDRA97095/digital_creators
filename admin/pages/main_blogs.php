@@ -23,20 +23,20 @@ if (!isset($_SESSION['email'])) {
 
 <body>
     <section>
-        <h1>Home Services Property Add</h1>
+        <h1>Main Blog Property Add</h1>
         <form action="insert.php" method="POST" enctype="multipart/form-data">
 
             <label for="name">Heading :</label>
-            <input type="text" name="title"><br><br>
+            <input type="text" name="title" placeholder="Enter heading"><br><br>
 
             <label for="para">Content1:</label>
-            <input type="text" name="para1" ><br><br>
+            <input type="text" name="para1" placeholder="Enter Paragraph"><br><br>
 
             <label for="para">Content2:</label>
-            <input type="text" name="para2" ><br><br>
+            <input type="text" name="para2" placeholder="Enter Paragraph"><br><br>
 
             <label for="para">Content3:</label>
-            <input type="text" name="para3" ><br><br>
+            <input type="text" name="para3" placeholder="Enter Paragraph"><br><br>
 
             <label for="">Date:</label>
             <input type="date" name="blog_date"> <br><br>

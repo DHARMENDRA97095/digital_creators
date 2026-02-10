@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,7 +66,7 @@
                                 <h5><?= $row['title'] ?></h5>
                                 <p><?= $row['para1'] ?></p>
 
-                                <a href="<?= $row['link'] ?>" class="read-more">
+                                <a href="blog1.php?page=<?= $row['link'] ?>" class="read-more">
                                     READ MORE <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>

@@ -140,6 +140,7 @@ if (!isset($_SESSION['email'])) {
     <div class="wraper">
         <section class="sidebar">
             <ul class="nav-bar">
+                <li><a href="#" data-page="dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
                 <li><a href="#" data-page="admin_page"><i class="fas fa-tachometer-alt"></i> Header & Footer Logo</a></li>
                 <li><a href="#" data-page="home_services"><i class="fas fa-dolly-flatbed"></i> Home Services</a></li>
                 <li><a href="#" data-page="main_blogs"><i class="fas fa-cogs"></i> Main Blog</a></li>
@@ -159,9 +160,9 @@ if (!isset($_SESSION['email'])) {
                 <!-- <h1 class="display-4">Welcome to Dashboard</h1> -->
                 <div id="content-area">
                     <?php
-                    $page = $_GET['page'] ?? 'admin_page';
+                    $page = $_GET['page'] ?? 'dashboard';
 
-                    $allowedPages = ['admin_page','home_services', 'main_blogs','who_we','team', 'settings'];
+                    $allowedPages = ['dashboard','admin_page','home_services', 'main_blogs','who_we','team', 'settings'];
 
                     if (in_array($page, $allowedPages)) {
                         include __DIR__ . "/pages/$page.php";

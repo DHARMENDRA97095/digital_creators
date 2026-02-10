@@ -27,16 +27,16 @@ if (!isset($_SESSION['email'])) {
         <form action="insert.php" method="POST" enctype="multipart/form-data">
 
         <label for="name">Service Name :</label>
-            <input type="text" name="title"><br><br>
+            <input type="text" name="title" placeholder="Service Name"><br><br>
 
             <label for="para">Content:</label>
-            <textarea name="para"></textarea><br><br>
+            <input name="para" placeholder="Enter Content"></input><br><br>
 
             <label for="image">Image :</label>
             <input type="file" name="image"><br><br>
 
             <label for="">Link :</label>
-                <input type="text" name="link" placeholder="Enter link"> <br><br>
+            <input type="text" name="link" placeholder="Enter link"> <br><br>
 
             <button type="submit" name="home_service" class="btn btn-success">
                 Add Property
@@ -81,7 +81,7 @@ if (!isset($_SESSION['email'])) {
 
                     
                     <td><a href='home_services_delete.php?id={$row['id']}' class='btn btn-danger'>Delete</a></td>
-                    <td><a href='update.php?id={$row['id']}' class='btn btn-primary'>Update</a></td>
+                    <td><a href='./update_home_services.php?id={$row['id']}' class='btn btn-primary'>Update</a></td>
 
                 </tr>
                 ";
