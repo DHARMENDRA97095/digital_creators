@@ -29,7 +29,7 @@ if (!isset($_SESSION['email'])) {
             <h1>Team Member Add</h1>
             <form action="insert.php" method="post" enctype="multipart/form-data">
 
-                <label for="para">Name : </label>
+                <label for="name">Name : </label>
                 <input type="text" name="name" placeholder="Enter Team Name"> <br><br>
 
                 <label for="para">Position : </label>
@@ -87,7 +87,7 @@ if (!isset($_SESSION['email'])) {
                     <td><img src='{$row['image']}' height='100' width='100'></td>
 
                     <td><a href='team_delete.php?id={$row['id']}' class='btn btn-danger'>Delete</a></td>
-                    <td><a href='update.php?id={$row['id']}' class='btn btn-primary'>Update</a></td>
+                    <td><a href='./update_team.php?id={$row['id']}' class='btn btn-primary'>Update</a></td>
                 </tr>
                 ";
             }

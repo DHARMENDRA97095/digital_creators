@@ -96,7 +96,7 @@ if (!isset($_SESSION['email'])) {
 
                     
                     <td><a href='main_blogs_delete.php?id={$row['id']}' class='btn btn-danger'>Delete</a></td>
-                    <td><a href='update.php?id={$row['id']}' class='btn btn-primary'>Update</a></td>
+                    <td><a href='./update_main_blog.php?id={$row['id']}' class='btn btn-primary'>Update</a></td>
 
                 </tr>
                 ";

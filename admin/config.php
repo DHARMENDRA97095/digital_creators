@@ -3,7 +3,7 @@
 // $password = "Dkp@97095";
 // $user = "hrntechs_DHARMENDRA_97095";
 // $host = "localhost";
-// $database = "hrntechs_fire_product";
+// $database = "hrntechs_digital_creators";
 
 $host = "localhost";
 $user = "root";

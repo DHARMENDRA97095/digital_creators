@@ -14,7 +14,7 @@
     <?php
     include 'config.php';
     $id = $_GET['id'];
-    $Record = mysqli_query($conn, "SELECT * FROM `home_services` WHERE id = $id");
+    $Record = mysqli_query($conn, "SELECT * FROM `main_blogs` WHERE id = $id");
     $data = mysqli_fetch_array($Record);
 
     ?>
@@ -22,14 +22,23 @@
     <section>
 
         <div class="admin-main">
-            <h1>Services ADD</h1>
+            <h1>Room ADD</h1>
             <form action="update1.php" method="post" enctype="multipart/form-data">
-            
-                <label for="para">Service Name</label>
+
+                <label for="para">Heading: </label>
                 <input type="text" name="title" value="<?php echo $data['title']; ?>" placeholder="Enter Services Name"> <br><br>
 
-                <label for="para">Content</label>
-                <input type="text" name="para" value="<?php echo $data['para']; ?>" placeholder="Enter Content"> <br><br>
+                <label for="para">Content1</label>
+                <input type="text" name="para1" value="<?php echo $data['para1']; ?>" placeholder="Enter Content1"> <br><br>
+
+                <label for="para">Content2</label>
+                <input type="text" name="para2" value="<?php echo $data['para2']; ?>" placeholder="Enter Content2"> <br><br>
+
+                <label for="para">Content3</label>
+                <input type="text" name="para3" value="<?php echo $data['para3']; ?>" placeholder="Enter Content3"> <br><br>
+
+                <label for="">Date:</label>
+                <input type="date" name="blog_date" value="<?php echo $data['blog_date'];?>"> <br><br>
 
                 <label for="">Link :</label>
                 <input type="text" name="link" value="<?php echo $data['link']; ?>" placeholder="Enter Update link"> <br><br>
@@ -38,9 +47,9 @@
                 <input type="file" name="image" value="<?php echo $data['image'] ?>" required>
                 <img src="<?php echo $data['image'] ?>" alt="" height="200" width="250"><br><br>
 
-                    <input type="hidden" name="id" value="<?php echo $data['id'] ?>">
+                <input type="hidden" name="id" value="<?php echo $data['id'] ?>">
 
-                    <button type="submit" name="update_home_services" class="btn btn-danger">Update</button>
+                <button type="submit" name="update_main_blog" class="btn btn-danger">Update</button>
             </form>
         </div>
     </section>
