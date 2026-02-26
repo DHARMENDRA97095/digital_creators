@@ -1,3 +1,11 @@
+<?php require_once 'assest/inc/functions.php';
+    enqueue_custom_css("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
+    enqueue_custom_js("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js");
+    
+    // Project ki apni custom CSS/JS
+    enqueue_custom_css("assest/css/style.css");
+    enqueue_custom_js("assest/js/main.js");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +15,7 @@
     <title>Digital Creators | Home </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assest/css/style.css">
+    <?php wp_head_css(); ?>
 </head>
 
 <body>
@@ -83,6 +92,7 @@
 
     <!-- ----------- Footer ------------------ -->
     <?php include "assest/component/footer.php" ?>
+    <?php wp_footer_js(); ?>
 </body>
 
 </html>

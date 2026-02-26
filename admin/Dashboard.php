@@ -146,10 +146,7 @@ if (!isset($_SESSION['email'])) {
                 <li><a href="#" data-page="main_blogs"><i class="fas fa-cogs"></i> Main Blog</a></li>
                 <li><a href="#" data-page="who_we"><i class="fas fa-cogs"></i> About Me</a></li>
                 <li><a href="#" data-page="team"><i class="fas fa-shopping-basket"></i> Team</a></li>
-                <!-- <li><a href="#"><i class="fas fa-truck"></i> Order</a></li> -->
-                <!-- <li><a href="#"><i class="fas fa-truck-loading"></i> Delivery</a></li> -->
-                <!-- <li><a href="#"><i class="fas fa-images"></i> Slider Image</a></li> -->
-                <!-- <li><a href="#"><i class="fas fa-cogs"></i> Setting</a></li> -->
+                <li><a href="#" data-page="manageTestimonials"><i class="fas fa-list"></i> Testimonials</a></li>
                 <li><a href="#"><i class="fas fa-id-badge"></i> Profile</a></li>
                 <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
             </ul>
@@ -162,7 +159,7 @@ if (!isset($_SESSION['email'])) {
                     <?php
                     $page = $_GET['page'] ?? 'dashboard';
 
-                    $allowedPages = ['dashboard','admin_page','home_services', 'main_blogs','who_we','team', 'settings'];
+                    $allowedPages = ['dashboard','admin_page','home_services', 'main_blogs','who_we','team', 'settings','manageTestimonials'];
 
                     if (in_array($page, $allowedPages)) {
                         include __DIR__ . "/pages/$page.php";
@@ -180,9 +177,7 @@ if (!isset($_SESSION['email'])) {
     </div>
 
     <!-- --------------- JS File --------------- -->
-    <!-- <script src="../js/jquery.js"></script>
-    <script src="../js/bootstrap.bundle.js"></script>
-    <script src="../bootstrap.min.js"></script> -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script>
